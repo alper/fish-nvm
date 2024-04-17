@@ -36,7 +36,7 @@ function nvm_alias_command -d "Create an alias command"
   end
 
   if test (count $argv) -le 0
-    set -l aliases node npm npx yarn
+    set -l aliases node npm npx yarn pnpm
 
     for alias in $aliases
         __create_alias_command "$outputPath/$alias" $alias
